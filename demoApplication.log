@@ -1,0 +1,71 @@
+[main] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - No stream found for IRI http://example.org/stocks/stream
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[Thread-0] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - Function MAX not found in Registry!
+[main] WARN  org.streamreasoning.rsp4j.yasper.querying.syntax.TPVisitorImpl  - Named window not found: http://test/window
+[main] WARN  org.streamreasoning.rsp4j.yasper.querying.PrefixMap  - Unregistered prefix for : "http://example.org/cars/Audi"
+[main] WARN  org.streamreasoning.rsp4j.yasper.querying.syntax.TPVisitorImpl  - Named window not found: http://test/window
+[main] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - No stream found for IRI http://example.org/cars/stream
+[main] ERROR org.streamreasoning.rsp4j.abstraction.ContinuousProgram  - No stream found for IRI http://example.org/cars/stream
+[main] ERROR org.streamreasoning.rsp4j.yasper.sds.DataSetImpl  - No path found for loading Data Set default
+[main] ERROR org.streamreasoning.rsp4j.yasper.sds.DataSetImpl  - No path found for loading Data Set default
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[main] ERROR org.streamreasoning.rsp4j.yasper.sds.DataSetImpl  - No path found for loading Data Set default
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[Thread-0] WARN  org.streamreasoning.rsp4j.yasper.querying.operators.r2r.Projection  - Projection Variable not found: model
+[main] ERROR org.streamreasoning.rsp4j.yasper.sds.DataSetImpl  - No path found for loading Data Set default
+[main] ERROR org.streamreasoning.rsp4j.yasper.sds.DataSetImpl  - No path found for loading Data Set default
+[main] ERROR org.streamreasoning.rsp4j.yasper.sds.DataSetImpl  - No path found for loading Data Set default
+[main] ERROR org.streamreasoning.rsp4j.yasper.sds.DataSetImpl  - No path found for loading Data Set default
