@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="472145c9-44dd-49e3-9952-79d04e633ed5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/solution/CarQueryProcessing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/CarStreamGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demoApplication.log" beforeDir="false" afterPath="$PROJECT_DIR$/demoApplication.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/solution/CarQueryProcessing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/solution/CarQueryProcessing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/CarStreamGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/CarStreamGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

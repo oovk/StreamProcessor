@@ -16,7 +16,7 @@ public class CarStreamGenerator {
     private static final Long TIMEOUT = 1000L;
 
     private final String[] carBrands = new String[]{"Mercedes-Benz", "Audi", "BMW", "Ford", "Toyota"};
-    private final String[] carModels = new String[]{"C-Class", "A3", "3-Series", "Mustang", "Corolla"};
+    private final String[] carPlate = new String[]{"MA-2028", "CA-2345", "CD-0977", "RQ-5646", "VR-8926"};
     private final Map<String, DataStream<Graph>> activeStreams;
     private final AtomicBoolean isStreaming;
     private final Random randomGenerator;
@@ -41,6 +41,9 @@ public class CarStreamGenerator {
         return activeStreams.get(streamURI);
     }
 
+    private double selectRandomSpeed() {
+        return randomGenerator.nextDouble() * 100;
+    }
     public void startStreaming() {
         if (!this.isStreaming.get()) {
             this.isStreaming.set(true);
@@ -67,20 +70,26 @@ public class CarStreamGenerator {
         RDF instance = RDFUtils.getInstance();
         Graph graph = instance.createGraph();
         IRI brand = instance.createIRI("http://example.org/vocabulary/brand");
-        IRI model = instance.createIRI("http://example.org/vocabulary/model");
+        IRI plate = instance.createIRI("http://example.org/vocabulary/plate");
+        IRI speed = instance.createIRI("http://example.org/vocabulary/speed");
 
-        graph.add(instance.createTriple(
-                instance.createIRI(getPREFIX() + "car" + streamIndexCounter.incrementAndGet()),
-                brand,
-                instance.createIRI(getPREFIX() + selectRandomCarBrand())
-        ));
+            graph.add(instance.createTriple(
+                    instance.createIRI(getPREFIX() + "car" + streamIndexCounter.incrementAndGet()),
+                    brand,
+                    instance.createIRI(getPREFIX() + selectRandomCarBrand())
+            ));
 
-        graph.add(instance.createTriple(
-                instance.createIRI(getPREFIX() + "car" + streamIndexCounter.get()),
-                model,
-                instance.createIRI(getPREFIX() + selectRandomCarModel())
-        ));
+            graph.add(instance.createTriple(
+                    instance.createIRI(getPREFIX() + "car" + streamIndexCounter.get()),
+                    plate,
+                    instance.createIRI(getPREFIX() + selectRandomCarPlate())
+            ));
 
+            graph.add(instance.createTriple(
+                    instance.createIRI(getPREFIX() + "car" + streamIndexCounter.get()),
+                    speed,
+                    instance.createIRI(getPREFIX() + String.format("%.2f", selectRandomSpeed()))
+            ));
         stream.put(graph, ts);
     }
 
@@ -89,9 +98,9 @@ public class CarStreamGenerator {
         return carBrands[randomIndex];
     }
 
-    private String selectRandomCarModel() {
-        int randomIndex = randomGenerator.nextInt(carModels.length);
-        return carModels[randomIndex];
+    private String selectRandomCarPlate() {
+        int randomIndex = randomGenerator.nextInt(carPlate.length);
+        return carPlate[randomIndex];
     }
 
     public void stopStreaming() {

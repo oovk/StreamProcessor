@@ -10,7 +10,8 @@ import org.streamreasoning.rsp4j.yasper.querying.syntax.TPQueryFactory;
 import utils.CarStreamGenerator;
 
 /***
- * We generate random cars, From the 20 cars generated in 20s window, we count how many of them are Audi A3 where A3 is model name.
+ * We generate random cars, From the 20 cars generated in 20s window,
+ * we procees a query that selects all BMW cars with their speed and plate information in the content window.
  */
 public class CarQueryProcessing {
 
@@ -18,19 +19,20 @@ public class CarQueryProcessing {
         // Set up the stream generator
         CarStreamGenerator generator = new CarStreamGenerator();
         DataStream<Graph> inputStream = generator.getStream("http://test/stream");
-        generator.printStream(inputStream);
+        //generator.printStream(inputStream);
+        // SELECT (COUNT(?car) AS ?BMWCount return the BMW count
 
-        // Define the query
+        // Define the query that selects all BMW cars with their speed and plate information in the content window.
         ContinuousQuery<Graph, Graph, Binding, Binding> query =
                 TPQueryFactory.parse(
                         ""
-                                + "REGISTER RSTREAM <http://out/stream> AS "
-                                + "SELECT (COUNT(?car) AS ?AudiA3count) "
+                                + "REGISTER RSTREAM <http://out/stream> AS SELECT ?car ?plate ?speed "
                                 + "FROM NAMED WINDOW <http://test/window> ON <http://test/stream> [RANGE PT20S STEP PT1S] "
                                 + "WHERE {"
                                 + "   WINDOW <http://test/window> { " +
-                                "?car <http://example.org/vocabulary/brand> <http://example.org/cars/Audi> ."+
-                                "?car <http://example.org/vocabulary/model> <http://example.org/cars/A3> ." +
+                                "?car <http://example.org/vocabulary/brand> <http://example.org/cars/BMW> ."+
+                                "?car <http://example.org/vocabulary/plate> ?plate ." +
+                                "?car <http://example.org/vocabulary/speed> ?speed ." +
                                 "}"
                                 + "}");
 
@@ -45,7 +47,7 @@ public class CarQueryProcessing {
 
         query.getOutputStream().addConsumer((el, ts) -> System.out.println(el + " @ " + ts));
         generator.startStreaming();
-        Thread.sleep(20_000);
+        Thread.sleep(40_000);
         generator.stopStreaming();
     }
 }
